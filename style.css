@@ -1,0 +1,29 @@
+.page { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator { 
+    width: 400px;
+    height: 600px;
+    border-width: 1px;
+    border-style: solid;
+    
+    
+
+}
+
+
+.screen { 
+    background-color: gray;
+    height: 100px;
+    width: 400px;
+}
+
+button { 
+    font-size: 10px;
+    height: 120px;
+    width: 95px;
+    border-radius: 30%;
+}
