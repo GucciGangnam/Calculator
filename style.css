@@ -16,6 +16,11 @@
     background-color: gray;
     height: 100px;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    
 }
 
 button { 
