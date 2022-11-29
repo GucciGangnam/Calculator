@@ -1,5 +1,6 @@
 body { 
     background-image: linear-gradient(102deg, rgb(69, 4, 131), rgb(254, 164, 251));
+    font-family: sans-serif;
 }
 
 .page { 
@@ -22,7 +23,7 @@ body {
 .screen { 
     background-color: transparent;
     width: 450px;
-    height: 150px;
+    height: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,10 +31,11 @@ body {
     gap: 10px;
     font-size: 50px;
     color: white;
+    padding-bottom: 90px;
 
 }
-.current { 
-    font-size: 30px;;
+#previous { 
+    color: rgba(255, 255, 255, 0.3)
 }
 
 
@@ -56,6 +58,44 @@ body {
 	cursor: pointer;
     border-radius: 25%;
 }
+.buttonNum:hover {
+    font-size: 65px;
+    color: white;  
+}
+.buttonNum:active { 
+    background: rgba(255, 255, 255, 0.1)
+}
+
+
+
+
+
+.buttonDecimal { 
+    font-size: 45px;
+    width: 100px;
+    height: 120px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+	cursor: pointer;
+    border-radius: 25%;
+}
+.buttonDecimal:hover {
+    font-size: 65px;
+    color: white;
+}
+.buttonDecimal:active { 
+    background: rgba(255, 255, 255, 0.1)
+}
+
+
+
+
+
+
+
+
 
 .buttonFun { 
     font-size: 45px;
@@ -68,86 +108,62 @@ body {
 	cursor: pointer;
     border-radius: 25%;
     color: rgb(136, 68, 0);
-
 }
-
-
-
-
-button:hover {
+.buttonFun:hover {
     font-size: 65px;
-  
     color: white;
-    
 }
-
-button:active { 
+.buttonFun:active { 
     background: rgba(255, 255, 255, 0.1)
 }
 
 
-.btn-one {
-    color: rgba(255,255,255,0.2);
-    transition: all 0.3s;
-    position: relative;
-    padding-left: 40px;
-    font-size: 30px;
-    letter-spacing: 2px;
-    
-  }
-  .btn-one span {
-    transition: all 0.3s;
-  }
-  .btn-one::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: all 0.3s;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-top-color: rgba(255,255,255,0.5);
-    border-bottom-color: rgba(255,255,255,0.5);
-    transform: scale(0.1, 1);
-  }
-  .btn-one:hover span {
-    letter-spacing: 8px;
-    color: rgb(255, 255, 255);
-  }
-  .btn-one:hover::before {
-    opacity: 1; 
-    transform: scale(1, 1); 
-    
-  }
-  .btn-one::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    transition: all 0.3s;
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-  }
-  .btn-one:hover::after {
-    opacity: 0; 
-    transform: scale(0.1, 1);
-    color: rgb(255, 255, 255);
 
-  }
 
-  .btn-one:active { 
-    border-top-color: rgba(255, 0, 0, 0.5);
-    border-bottom-color: rgba(255, 0, 0, 0.5);
-    color: rgb(255, 254, 254);
-    transition: 0ms;
+
+
+.buttonEqual {
+    font-size: 45px;
+    width: 100px;
+    height: 120px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+	cursor: pointer;
+    border-radius: 25%;
+    color: rgb(136, 68, 0);
+}
+.buttonEqual:hover {
+    font-size: 65px;
+    color: white;
+}
+.buttonEqual:active { 
+    background: rgba(255, 255, 255, 0.1)
+}
+
+
+
+
+
+.clearbtn { 
+    background: none;
+	color: rgba(255, 255, 255, 0.1);
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 20px;
+
+}
+
+.clearbtn:hover {
     
-  }
+    color: rgba(201, 0, 0, 0.5);
+}
+
+.clearbtn:active { 
+  color: rgb(19, 162, 0);
+  transition: 1.5s ease-in-out;
+}
