@@ -107,3 +107,48 @@ document.getElementById("button.").onclick = function() {
 
 }
 
+
+// add keyboard button function 
+
+document.addEventListener('keypress', (e) => { 
+    if (e.key == 1) { displayValue += e.key; answer.innerHTML += e.key;}
+    else if (e.key == 2) { displayValue += e.key; answer.innerHTML += e.key;}
+    else if (e.key == 3) { displayValue += e.key; answer.innerHTML += e.key;}
+    else if (e.key == 4) { displayValue += e.key; answer.innerHTML += e.key;}
+    else if (e.key == 5) { displayValue += e.key; answer.innerHTML += e.key;}
+    else if (e.key == 6) { displayValue += e.key; answer.innerHTML += e.key;}
+    else if (e.key == 7) { displayValue += e.key; answer.innerHTML += e.key;}
+    else if (e.key == 8) { displayValue += e.key; answer.innerHTML += e.key;}
+    else if (e.key == 9) { displayValue += e.key; answer.innerHTML += e.key;}
+    else if (e.key == 0) { displayValue += e.key; answer.innerHTML += e.key;}
+    else if (e.key == '.') { 
+        if ((displayValue.includes('.')) || (displayValue == '')) { return }
+        else 
+        {displayValue += '.';
+        answer.innerHTML += '.'; 
+    }}
+    else if (e.key == 'Enter') {  
+        if (operator == '/') {
+           displayValue = (previousNum / displayValue);
+           answer.innerHTML = displayValue;
+   
+       }
+       else if (operator == '*') { 
+           displayValue = (previousNum * displayValue);
+           answer.innerHTML = displayValue;
+       }
+       else if (operator == '+') { 
+           displayValue = parseFloat(previousNum) + parseFloat(displayValue);
+           answer.innerHTML = displayValue;
+       }
+       else if (operator == '-') { 
+           displayValue = parseFloat(previousNum) - parseFloat(displayValue);
+           answer.innerHTML = displayValue;
+       }}
+       else if (e.key == 'Backspace') {  
+        displayValue = Math.floor(displayValue / 10);
+        answer.innerHTML = displayValue;}
+    else { return }
+})
+
+
