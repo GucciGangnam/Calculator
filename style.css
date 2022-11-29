@@ -146,24 +146,8 @@ body {
 
 
 
-.clearbtn { 
-    background: none;
-	color: rgba(255, 255, 255, 0.1);
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    font-size: 20px;
-
-}
-
-.clearbtn:hover {
-    
-    color: rgba(201, 0, 0, 0.5);
-}
-
-.clearbtn:active { 
-  color: rgb(19, 162, 0);
-  transition: 1.5s ease-in-out;
+.clears {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }

@@ -17,6 +17,15 @@ function clear() {
     console.log('youcleared')
 }
 
+//remove function
+
+document.getElementById("removebtn").onclick = function() { 
+    displayValue = Math.floor(displayValue / 10);
+    answer.innerHTML = displayValue;
+}
+
+
+
 
 // display numbers on screen and add to display value
 const screen = document.getElementById("answer")
